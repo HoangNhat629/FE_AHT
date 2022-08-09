@@ -1,0 +1,124 @@
+.top-selling {
+    &-header {
+        display: flex;
+        margin-top: 46px;
+
+        .row {
+            justify-content: space-between;
+            padding: 0 15px;
+
+            .title-selling {
+                font-size: 42px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.01em;
+            }
+
+            .arrow-selling {
+                display: flex;
+                justify-content: center;
+                color: #cfcfcf;
+                font-size: 42px;
+
+                .right-arrow-selling {
+                    margin-left: 18px;
+
+                    &:hover {
+                        color: #2fafcd;
+                    }
+                }
+
+                .left-arrow-selling {
+
+
+                    &:hover {
+                        color: #2fafcd;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .content-selling {
+        margin-top: 40px;
+        margin-bottom: 18px;
+
+        .row {
+            justify-content: space-between;
+            padding: 0 15px;
+            box-sizing: border-box;
+
+            .card-selling {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 18px 0 25px 0;
+                line-height: 50px;
+
+
+                .img-selling {
+                    overflow: hidden;
+
+                    &:hover {
+
+
+                        img {
+                            .transform(scale(1.1));
+
+                        }
+                    }
+
+                    img {
+                        .transit(all, .5s);
+                        overflow: hidden;
+                    }
+                }
+
+
+
+
+                .detail-selling {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: -5px;
+                    line-height: 45px;
+
+                    .name-selling {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000;
+                        line-height: 22px;
+                        width: 200px;
+                        padding-bottom: 5px;
+                        height: 34px;
+                        letter-spacing: -0.5px;
+                    }
+
+                    .worth-selling {
+                        display: flex;
+                        font-size: 13px;
+
+                        .price-selling {
+                            color: #0ca8c9;
+
+                        }
+
+                        .discount-selling {
+                            display: none;
+
+                            &.active {
+                                margin-right: 12px;
+                                color: #696969;
+                                text-decoration-line: line-through;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

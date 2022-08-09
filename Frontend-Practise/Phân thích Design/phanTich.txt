@@ -1,0 +1,18 @@
+Các thành phần chính:
+- Header
+- Menu (navbar)
+- Slider
+- Breadcrumb (Không có ở trang hơme) (vd: HOME/Products/sản phảm 1-đường dẫn  )
+- Banner
+= Listing
+- News
+- Footer
+
+Thành phần phụ:
+- Strength (nằm giữa slider và banner)
+- Banner phụ ( nằm giữa Listing)
+- Feedback (testtimonials nằm dưới product)
+- Brands (trên Footer)
+- Newsletter( subcription nằm trên branding)
+Container: 1110-1170 | [1200,1366]
+Container-fluid: 100% (cách lề 15px)

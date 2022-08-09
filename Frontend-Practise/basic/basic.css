@@ -1,0 +1,57 @@
+.vidu_1 {
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+  text-align: center;
+}
+
+.vidu_2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: whitesmoke;
+  align-items: center;
+}
+.vidu_2 .left {
+  font-size: 20px;
+}
+
+.vidu_3 {
+  margin: 10px auto;
+  background: green;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+.vidu_3 a {
+  font-size: 22px;
+  background: wheat;
+  padding: 12.5px 28.25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.img {
+  display: flex;
+  justify-content: space-around;
+}
+.vidu_4,
+.vidu_5 {
+  margin-top: 10px;
+  width: 500px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.vidu_4 img,
+.vidu_5 img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.vidu_4:hover img {
+  transform: rotate(540deg);
+}
+.vidu_5:hover img {
+  transform: scale(1.2);
+}
