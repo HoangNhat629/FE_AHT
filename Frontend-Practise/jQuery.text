@@ -1,0 +1,70 @@
+1.  jQuery Selectors
+   jQuery Selectors được dùng để chọn các phần tử HTML mà bạn muốn thao tác dựa trên id, class, thuộc tính, giá trị thuộc tính, quan hệ giữa các phần tử....
+++ Cú pháp
+            Để chọn một phần tử HTML chúng ta sử dụng cú pháp
+                         $(selector)
+
+2. Trong jQuery có 4 phương thức chính để lấy nội dung và thuộc tính của một phần tử HTML.
+
+            text() - lấy nội dung của một phần tử HTML (không bao gồm các thẻ HTML)
+            html() - lấy nội dung của một phần tử HTML (bao gồm các thẻ HTML)
+            val() - lấy giá trị của một trường input
+            attr("tên thuộc tính") - lấy giá trị thuộc tính của một phần tử HTML
+
+3. Hàm Callback trong jQuery
+Một cú pháp điển hình: $(selector).hide(speed,callback)
+ VD:  $("#hide-co").click(function(){
+                $("div").hide(3000, function(){
+                    alert("Đã ẩn phần tử HTML");
+                });
+            
+
+4. Xóa phần tử HTML trong jQuery
+  Phương thức remove() - dùng để xóa phần tử HTML.
+      $("selector1,selector2,....,relectorN").remove();
+  Phương thức empty() - dùng để xóa nội dung của phần tử HTML.
+      $("selector1,selector2,....,relectorN").empty();
+
+5. Các phương thức thiết lập thuộc tính Class trong jQuery
+ a. Phương thức addClass() trong jQuery
+
+   Phương thức addClass() được dùng để thêm giá trị cho thuộc tính class cho phần tử HTML.
+    Cú pháp
+       $("selector1,selector2,....,selectorN").addClass("class1 class2 .... classN");
+
+Ví dụ
+      Câu lệnh dưới đây sẽ thêm class có tên là "red" và "big" cho phần tử <h4> có id là "abc", và phần tử <div>
+
+            $("h4#abc, div").addClass("red big");
+
+ b.Phương thức removeClass() trong jQuery
+    Phương thức removeClass() được dùng để xóa giá trị của thuộc tính class của phần tử HTML.
+            Cú pháp
+
+            $("selector1,selector2,....,selectorN").removeClass("class1 class2 .... classN");
+            
+ Ví dụ
+    Câu lệnh dưới đây sẽ xóa class có tên là "red" và "big" của phần tử <h4> có id là "abc", và phần tử <div>
+
+            $("h4#abc, div").removeClass("red big");
+       
+ c.Phương thức toggleClass() trong jQuery
+    Phương thức toggleClass() được dùng để luân chuyển giữa việc thêm/xóa giá trị của thuộc tính class của phần tử HTML.
+            Cú pháp   
+            $("selector1,selector2,....,selectorN").toggleClass("class1 class2 .... classN");
+
+ Ví dụ 
+    Câu lệnh dưới đây sẽ luân chuyển giữa việc thêm/xóa class có tên là "red" và "big" của phần tử <h4> có id là "abc", và phần tử <div>
+            $("h4#abc, div").toggleClass("red big");
+
+6. Cách chọn các phần tử cha trong jQuery
+   Phương thức parent() - dùng để chọn phần tử cha mẹ.
+     vd:
+     Câu lệnh dưới đây sẽ chọn phần tử là cha mẹ của phần tử <span> với điều kiện phần tử cha mẹ đó phải là <li>, sau đó dùng phương thức attr() để thêm thuộc tính style với giá trị "border:5px solid red" cho phần tử đó.
+               $("span").parent("li").attr("style","border:5px solid red");
+
+     Câu lệnh dưới đây sẽ chọn phần tử là cha mẹ của phần tử <span>, sau đó dùng phương thức attr() để thêm thuộc tính style với giá trị "border:5px solid red" cho phần tử đó.
+               $("span").parent().attr("style","border:5px solid red");
+
+   Phương thức parents() - dùng để chọn phần tử cha mẹ, ông bà, tổ tiên,.... (nói chúng là từ cha mẹ trở lên).
+   Phương thức parentsUntil() - dùng để chọn các phần tử tổ tiên nằm bên trong một phần tử chỉ định

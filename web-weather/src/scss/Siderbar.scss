@@ -1,0 +1,53 @@
+.inputField {
+    margin-top: 30px;
+    input {
+        height: 0.5em;
+        width: 222px
+    }
+}
+
+.pic1 {
+    width: 50%;
+}
+
+.pic2 {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 13px
+}
+
+.location {
+    font-weight: bold;
+}
+
+.city {
+    font-size: 2rem;
+}
+
+.degree {
+    font-size: 2.5rem;
+}
+
+.weather {
+    color: #6c757d;
+    text-transform: capitalize;
+    line-height: 1.5;
+    list-style-type: none;
+    padding-top: 10px
+}
+
+.img_bot {
+    position: relative;
+    width: 90%
+}
+
+.img_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap
+}
