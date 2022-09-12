@@ -6,7 +6,7 @@ import Maincontent from "./components/MainContent";
 function App() {
   const [weather, setWeather] = useState();
   const onChange = (ChildData) => {
-    setWeather(ChildData);
+    return setWeather(ChildData);
   };
   return (
     <Container fixed sx={{ pt: 3 }}>
